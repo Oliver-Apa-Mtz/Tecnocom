@@ -1,5 +1,6 @@
 
 import Layout from '../../components/Layout';
+import { Link } from 'react-router-dom';
 
 import BannerHome from '../../assets/img/banner-products.png';
 import Card1 from '../../assets/img/card-1.png';
@@ -43,22 +44,34 @@ const Products = () => {
 
 							<div className='flex justify-center gap-4 mt-16'>
 								<div>
-									<a className='button button--secondary' href="" style={{ padding: '11px 20px' }}>Conectividad</a>
+									<Link to="/producto-detalle" className='button button--secondary' style={{ padding: '11px 20px' }}>
+										Conectividad
+									</Link>
 								</div>
 								<div>
-									<a className='button button--secondary' href="" style={{ padding: '11px 20px' }}>Seguridad</a>
+									<Link to="/producto-detalle" className='button button--secondary' style={{ padding: '11px 20px' }}>
+										Seguridad
+									</Link>
 								</div>
 								<div>
-									<a className='button button--secondary' href="" style={{ padding: '11px 20px' }}>Infraestructura</a>
+									<Link to="/producto-detalle" className='button button--secondary' style={{ padding: '11px 20px' }}>
+										Infraestructura
+									</Link>
 								</div>
 								<div>
-									<a className='button button--secondary' href="" style={{ padding: '11px 20px' }}>Innovación</a>
+									<Link to="/producto-detalle" className='button button--secondary' style={{ padding: '11px 20px' }}>
+										Innovación
+									</Link>
 								</div>
 								<div>
-									<a className='button button--secondary' href="" style={{ padding: '11px 20px' }}>Comunicación</a>
+									<Link to="/producto-detalle" className='button button--secondary' style={{ padding: '11px 20px' }}>
+										Comunicación
+									</Link>
 								</div>
 								<div>
-									<a className='button button--secondary' href="" style={{ padding: '11px 20px' }}>Sistemas Hospitalarios</a>
+									<Link to="/producto-detalle" className='button button--secondary' style={{ padding: '11px 20px' }}>
+										Sistemas Hospitalarios
+									</Link>
 								</div>
 							</div>
 
@@ -71,7 +84,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card2} alt="Telefonía SIP" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -79,7 +92,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card3} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -87,7 +100,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card4} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -95,7 +108,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card5} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -103,7 +116,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card6} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -111,7 +124,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card7} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -119,7 +132,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card8} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -127,7 +140,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card9} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -135,7 +148,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card10} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -143,7 +156,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card11} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
@@ -151,7 +164,7 @@ const Products = () => {
 										<p className="text-[16px] font-light text-text">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
 									</div>
 								</div>
-								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+								<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
 									<img src={Card12} alt="Seguridad" className="w-full h-[400px] object-cover" />
 									<div className="p-5">
 										<h3 className="text-[20px] font-semibold text-principal mb-2">Conectividad</h3>
