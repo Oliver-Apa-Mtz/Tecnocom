@@ -1,0 +1,70 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.button {
+	width: max-content;
+	height: auto;
+	padding: 11px 42px;
+	border-radius: 32px;
+	transition: all .3s;
+	font-size: 16px;
+	cursor: pointer;
+	margin: 30px 0;
+}
+
+.button--large {
+	padding: 14px 100px;
+}
+
+.button--primary {
+	background-color: #3CCBDA;
+	border: 1px solid #3CCBDA;
+	color: white;
+}
+
+.button--primary:hover {
+	background-color: white;
+	color: #3CCBDA;
+}
+
+.button--secondary {
+	background-color: #2C2E65;
+	border: 1px solid #2C2E65;
+	color: white;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.button--secondary:hover {
+	background-color: white;
+	color: #2C2E65;
+}
+
+.detail-active{
+	position: absolute;
+	border-bottom: 12px solid #2C2E65;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	bottom: -32px;
+	left: calc(50% - 8px);
+}
+
+.form input, .form textarea{
+	outline: none;
+}
