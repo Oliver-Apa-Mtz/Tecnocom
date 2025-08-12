@@ -1,3 +1,31 @@
 header{
 	height: 80px;
+	position: relative;
+	z-index: 99;
+}
+.header__nav__item{
+	position: relative;
+}
+.active{
+	color: #2C2E65;
+}
+.active::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 5px;
+	bottom: -30px;
+	left: 0;
+	background-color: #2C2E65;
+}
+.header__nav__movil{
+	position: absolute;
+	width: 100%;
+	top: 80px;
+	left: 0;
+	background-color: #2C2E65;
+	color: white;
+}
+.fixed{
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
