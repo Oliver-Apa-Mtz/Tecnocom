@@ -50,7 +50,7 @@ const Header = () => {
 				<nav className="hidden lg:flex gap-4 xl:gap-6 text-sm text-text">
 					<Link to="/" className={`header__nav__item poppins-regular hover:text-principal ${location.pathname === '/' ? 'active' : ''}`}>Inicio</Link>
 					<Link to="/nosotros" className={`header__nav__item poppins-regular hover:text-principal ${location.pathname === '/nosotros' ? 'active' : ''}`}>Nosotros</Link>
-					<Link to="/productos-servicios" className={`header__nav__item poppins-regular hover:text-principal ${location.pathname === '/productos-servicios' || location.pathname === '/producto-detalle' ? 'active' : ''}`}>Productos y servicios</Link>
+					<Link to="/productos-servicios" className={`header__nav__item poppins-regular hover:text-principal ${location.pathname === '/productos-servicios' ? 'active' : ''}`}>Productos y servicios</Link>
 					<Link to="/industrias" className={`header__nav__item poppins-regular hover:text-principal ${location.pathname === '/industrias' ? 'active' : ''}`}>Industrias</Link>
 					<Link to="/socios" className={`header__nav__item poppins-regular hover:text-principal ${location.pathname === '/socios' ? 'active' : ''}`}>Socios</Link>
 					<Link to="/como-trabajamos" className={`header__nav__item poppins-regular hover:text-principal ${location.pathname === '/como-trabajamos' ? 'active' : ''}`}>¿Cómo Trabajamos?</Link>

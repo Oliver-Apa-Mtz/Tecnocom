@@ -23,7 +23,7 @@ const Footer = () => {
 						<img className='h-[55px] mx-auto lg:mx-0 mb-8 lg:mb-0' src={Logo} alt="" loading="lazy" />
 					</Link>
 				</div>
-				<div className='w-[310px] mx-auto lg:mx-0 ml-auto lg:ml-[40px]'>
+				<div className='w-[280px] md:w-[300px] mx-auto lg:mx-0 ml-auto lg:ml-[40px]'>
 					<h4 className="mb-2 text-principal text-[20px] text-center lg:text-left poppins-semibold">Contacto</h4>
 					<Link to="https://maps.app.goo.gl/h5kXSZp9TJ9Je4fE9" target="_blank">
 						<p className='albert-sans-300 text-purple text-[18px] mb-2 relative pl-8 hover:text-principal'>
@@ -46,16 +46,16 @@ const Footer = () => {
 						</p>
 					</a>
 				</div>
-				<div className='w-[310px] lg:w-[180px] mx-auto lg:mx-0 text-center lg:text-left pt-4 lg:pt-0'>
+				<div className='w-[280px] md:w-[300px] lg:w-[180px] mx-auto lg:mx-0 text-center lg:text-left pt-4 lg:pt-0'>
 					<h4 className="mb-2 text-principal text-[20px] poppins-semibold">Links</h4>
 					<Link to="/" className="albert-sans-300 text-purple text-[18px] mb-2 block hover:text-principal">Inicio</Link>
 					<Link to="/nosotros" className="albert-sans-300 text-purple text-[18px] mb-2 block hover:text-principal">Nosotros</Link>
 					<Link to="/productos-servicios" className="albert-sans-300 text-purple text-[18px] mb-2 block hover:text-principal">Productos y servicios</Link>
 				</div>
-				<div className='w-[310px] lg:w-[180px] mx-auto lg:mx-0 pt-0 lg:pt-[38px] ml-auto lg:ml-[20px] text-center lg:text-left'>
+				<div className='w-[280px] md:w-[300px] lg:w-[180px] mx-auto lg:mx-0 pt-0 lg:pt-[38px] ml-auto lg:ml-[20px] text-center lg:text-left'>
 					<Link to="/socios" className="albert-sans-300 text-purple text-[18px] mb-2 block hover:text-principal">Socios</Link>
 					<Link to="/como-trabajamos" className="albert-sans-300 text-purple text-[18px] mb-2 block hover:text-principal">¿Cómo Trabajamos?</Link>
-					<Link to="/productos-servicios" className="albert-sans-300 text-purple text-[18px] mb-2 block hover:text-principal">Casos de exito</Link>
+					<Link to="/contacto" className="albert-sans-300 text-purple text-[18px] mb-2 block hover:text-principal">Contacto</Link>
 				</div>
 				<div className='flex justify-center lg:justify-end gap-5 ml-0 lg:ml-[40px] pt-4 lg:pt-0'>
 					<Link to="/" className="hover:grayscale transition-all duration-300">

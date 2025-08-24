@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import Layout from '../../components/Layout';
 
 import Logo from '../../assets/img/Logo.png';
-import BannerHome from '../../assets/img/banner-home.png';
+import BannerHome from '../../assets/img/banner-home.webp';
 
 import Icon1 from '../../assets/img/icon-1.svg';
 import Icon2 from '../../assets/img/icon-2.svg';
@@ -25,12 +25,12 @@ import Logo7 from '../../assets/img/logo-7.png';
 import Logo8 from '../../assets/img/logo-8.png';
 import Logo9 from '../../assets/img/logo-9.png';
 
-import Image1 from '../../assets/img/img-1.png';
+import Image1 from '../../assets/img/img-1.webp';
 
-import Slider1 from '../../assets/img/Slider-1.png';
-import Slider2 from '../../assets/img/Slider-2.png';
-import Slider3 from '../../assets/img/Slider-3.png';
-import Slider4 from '../../assets/img/Slider-4.png';
+import Slider1 from '../../assets/img/Slider-1.webp';
+import Slider2 from '../../assets/img/Slider-2.webp';
+import Slider3 from '../../assets/img/Slider-3.webp';
+import Slider4 from '../../assets/img/Slider-4.webp';
 
 const settings = {
 	dots: false,
@@ -52,8 +52,15 @@ const Home = () => {
 		const scrollPosition = window.scrollY;
 		const headerHeight = 200;
 		setIsVisibleBanner2(scrollPosition > (headerHeight));
-		setIsVisibleBanner3(scrollPosition > (headerHeight + 700));
-		setIsVisibleBanner4(scrollPosition > (headerHeight + 700));
+		if (scrollPosition > (headerHeight + 700)) {
+			setIsVisibleBanner3(true);
+			setTimeout(() => {
+				setIsVisibleBanner4(true);
+			}, 500);
+		} else {
+			setIsVisibleBanner3(false);
+			setIsVisibleBanner4(false);
+		}
 		setIsVisibleBanner5(scrollPosition > (headerHeight + 1400));
 	};
 	const animationPropsBanner1 = useSpring({

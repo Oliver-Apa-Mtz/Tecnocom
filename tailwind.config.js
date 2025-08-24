@@ -10,6 +10,8 @@ export default {
 				white: "#FFFFFF",
 				gray: "#F3F3F3",
 				purple: "#716C80",
+				darkGray: "#444444",
+				blue: "#B0F8FF",
 			},
 		},
 		fontFamily: {
