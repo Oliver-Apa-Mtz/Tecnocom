@@ -1,4 +1,5 @@
 import BannerForm from '../../assets/img/banner-form.webp';
+import IconArrow from '../../assets/img/arrow-button.svg';
 
 const Form = () => {
 
@@ -36,7 +37,10 @@ const Form = () => {
 									Nunca compartimos su información y solo la usamos para servirle mejor.
 								</p>
 								<div className='flex justify-center'>
-									<a className='button button--secondary poppins-regular' href="" style={{ padding: '11px 20px', marginBottom: 0 }}>Lea más sobre nosotros</a>
+									<a className='button button--secondary poppins-regular flex' href="" style={{ padding: '11px 20px', marginBottom: 0 }}>
+										Lea más sobre nosotros
+										<img src={IconArrow} className='border-l border-white/20 ml-4 pl-2 w-[25px] hidden sm:block' alt="Icono flecha derecha" />
+									</a>
 								</div>
 							</div>
 						</div>

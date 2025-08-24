@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 import { Link } from 'react-router-dom';
 
 import BannerHome from '../../assets/img/banner-products.webp';
@@ -46,9 +47,14 @@ const Products = () => {
 
 	return (
 		<Layout>
-			{
-				<div>
-					<section className="w-full h-[400px] lg:h-[600px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerHome})` }}>
+			<SEO 
+				title="Productos y Servicios"
+				description="Descubre nuestros productos y servicios de TI: conectividad, seguridad, infraestructura, videovigilancia, telefonía SIP y más. Soluciones tecnológicas integrales en Mazatlán."
+				keywords="productos TI, servicios tecnológicos, conectividad empresarial, seguridad informática, videovigilancia, telefonía SIP, infraestructura TI"
+				url="/productos-servicios"
+			/>
+			<div>
+					<section className="w-full h-[400px] lg:h-[600px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerHome})` }} role="banner">
 						<div className="w-full max-w-[1360px] mx-auto">
 							<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
 								<div className="text-center">
@@ -63,12 +69,12 @@ const Products = () => {
 						</div>
 					</section>
 
-					<section className='w-full pt-10 pb-20'>
+					<section className='w-full pt-10 pb-20' role="main">
 						<div className="w-full max-w-[1360px] mx-auto px-0 md:px-[20px]">
-							<p className="text-principal text-center text-[22px] lg:text-[34px] poppins-semibold px-4 lg:px-[80px]">
+							<h2 className="text-principal text-center text-[22px] lg:text-[34px] poppins-semibold px-4 lg:px-[80px]">
 								Cada servicio está diseñado para resolver necesidades
 								reales de tu empresa de forma clara y sencilla:
-							</p>
+							</h2>
 
 							<div className='flex justify-center gap-x-4 mt-16 flex-wrap lg:flex-nowrap'>
 								<div>
@@ -275,8 +281,7 @@ const Products = () => {
 							</animated.div>
 						</div>
 					</section>
-				</div>
-			}
+			</div>
 		</Layout>
 	)
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 import Form from '../../components/Form';
 
 import BannerHome from '../../assets/img/banner-product.webp';
@@ -50,176 +51,180 @@ const Product = () => {
 
 	return (
 		<Layout>
-			{
-				<div>
-					<section className="w-full h-[400px] lg:h-[600px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerHome})` }}>
-						<div className="w-full max-w-[1360px] mx-auto">
-							<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
-								<div className="text-center">
-									<h1 className="text-[30px] md:text-[40px] lg:text-[50px] poppins-semibold text-white w-full md:w-[740px] mx-auto mb-8 md:leading-[50px] lg:leading-[60px]">
-										<span className="text-secundario">Industrias</span><br></br> Para que tu empresa avance
-									</h1>
-									<p className="text-white font-light text-[20px] albert-sans-300">
-										Ofrecemos servicios claros, categorizados y fáciles de entender:
+			<SEO
+				title="Industrias"
+				description="Soluciones tecnológicas especializadas por industria: hogar, hospitales, hotelería, industria y educación. Tecnocom MZT adapta sus servicios a cada sector."
+				keywords="industrias TI, soluciones sectoriales, tecnología hospitalaria, hotelería, industria, educación, hogar inteligente"
+				url="/industrias"
+			/>
+			<div>
+				<section className="w-full h-[400px] lg:h-[600px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerHome})` }} role="banner">
+					<div className="w-full max-w-[1360px] mx-auto">
+						<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
+							<div className="text-center">
+								<h1 className="text-[30px] md:text-[40px] lg:text-[50px] poppins-semibold text-white w-full md:w-[740px] mx-auto mb-8 md:leading-[50px] lg:leading-[60px]">
+									<span className="text-secundario">Industrias</span><br></br> Para que tu empresa avance
+								</h1>
+								<p className="text-white font-light text-[20px] albert-sans-300">
+									Ofrecemos servicios claros, categorizados y fáciles de entender:
+								</p>
+							</div>
+						</animated.div>
+					</div>
+				</section>
+
+				<section className='w-full pt-10 pb-20' role="main">
+					<div className="max-w-[1360px] mx-auto px-[20px]">
+						<h2 className="text-principal text-center text-[22px] lg:text-[34px] poppins-semibold px-4 lg:px-[80px]">
+							Cada servicio está diseñado para resolver necesidades
+							reales de tu empresa de forma clara y sencilla:
+						</h2>
+						<animated.div style={!isMobile ? animationPropsBanner2 : {}} className="animated-element">
+							<div className='flex justify-center gap-1 lg:gap-4 mt-8 lg:mt-16 border-b-[2px] border-principal pb-8'>
+								<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall1" onClick={() => {
+									setActiveDetail(0);
+									setTimeout(() => {
+										setActiveDetail(1);
+									}, 100);
+								}}>
+									<img src={DetailSmall1} alt="Hogar" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+									<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hogar</p>
+									{activeDetail === 1 && <div className="detail-active"></div>}
+								</div>
+								<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall2" onClick={() => {
+									setActiveDetail(0);
+									setTimeout(() => {
+										setActiveDetail(2);
+									}, 100);
+								}}>
+									<img src={DetailSmall2} alt="Hospital" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+									<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hospital</p>
+									{activeDetail === 2 && <div className="detail-active"></div>}
+								</div>
+								<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall3" onClick={() => {
+									setActiveDetail(0);
+									setTimeout(() => {
+										setActiveDetail(3);
+									}, 100);
+								}}>
+									<img src={DetailSmall3} alt="Hoteleria" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+									<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hoteleria</p>
+									{activeDetail === 3 && <div className="detail-active"></div>}
+								</div>
+								<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall4" onClick={() => {
+									setActiveDetail(0);
+									setTimeout(() => {
+										setActiveDetail(4);
+									}, 100);
+								}}>
+									<img src={DetailSmall4} alt="Industrial" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+									<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Industrial</p>
+									{activeDetail === 4 && <div className="detail-active"></div>}
+								</div>
+								<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall5" onClick={() => {
+									setActiveDetail(0);
+									setTimeout(() => {
+										setActiveDetail(5);
+									}, 100);
+								}}>
+									<img src={DetailSmall5} alt="Educación" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+									<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Educación</p>
+									{activeDetail === 5 && <div className="detail-active"></div>}
+								</div>
+							</div>
+						</animated.div>
+
+						{activeDetail === 1 && (
+							<animated.div style={activeDetail === 1 ? detailAnimation : {}} className="w-full">
+								<div className="py-4">
+									<h3 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal uppercase">Hogar</h3>
+									<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
+									<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
+										Los hogares hoy en día evolucionan con rapidez,
+										requerimos espacios más funcionales, cómodos y
+										seguros. Contar con proveedores especializados
+										que ofrezcan soluciones eficientes, confiables y
+										adecuadas es clave para mejorar la calidad de vida
+										y la experiencia en el entorno doméstico.
 									</p>
 								</div>
+								<img src={Slider1} alt="Explora lo que podemos hacer por tu vida diaria." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
 							</animated.div>
-						</div>
-					</section>
-
-					<section className='w-full pt-10 pb-20'>
-						<div className="max-w-[1360px] mx-auto px-[20px]">
-							<p className="text-principal text-center text-[22px] lg:text-[34px] poppins-semibold px-4 lg:px-[80px]">
-								Cada servicio está diseñado para resolver necesidades
-								reales de tu empresa de forma clara y sencilla:
-							</p>
-							<animated.div style={!isMobile ? animationPropsBanner2 : {}} className="animated-element">
-								<div className='flex justify-center gap-1 lg:gap-4 mt-8 lg:mt-16 border-b-[2px] border-principal pb-8'>
-									<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall1" onClick={() => {
-										setActiveDetail(0);
-										setTimeout(() => {
-											setActiveDetail(1);
-										}, 100);
-									}}>
-										<img src={DetailSmall1} alt="Hogar" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
-										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hogar</p>
-										{activeDetail === 1 && <div className="detail-active"></div>}
-									</div>
-									<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall2" onClick={() => {
-										setActiveDetail(0);
-										setTimeout(() => {
-											setActiveDetail(2);
-										}, 100);
-									}}>
-										<img src={DetailSmall2} alt="Hospital" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
-										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hospital</p>
-										{activeDetail === 2 && <div className="detail-active"></div>}
-									</div>
-									<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall3" onClick={() => {
-										setActiveDetail(0);
-										setTimeout(() => {
-											setActiveDetail(3);
-										}, 100);
-									}}>
-										<img src={DetailSmall3} alt="Hoteleria" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
-										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hoteleria</p>
-										{activeDetail === 3 && <div className="detail-active"></div>}
-									</div>
-									<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall4" onClick={() => {
-										setActiveDetail(0);
-										setTimeout(() => {
-											setActiveDetail(4);
-										}, 100);
-									}}>
-										<img src={DetailSmall4} alt="Industrial" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
-										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Industrial</p>
-										{activeDetail === 4 && <div className="detail-active"></div>}
-									</div>
-									<div className='w-[240px] cursor-pointer text-center relative' id="DetailSmall5" onClick={() => {
-										setActiveDetail(0);
-										setTimeout(() => {
-											setActiveDetail(5);
-										}, 100);
-									}}>
-										<img src={DetailSmall5} alt="Educación" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
-										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Educación</p>
-										{activeDetail === 5 && <div className="detail-active"></div>}
-									</div>
+						)}
+						{activeDetail === 2 && (
+							<animated.div style={activeDetail === 2 ? detailAnimation : {}} className="w-full">
+								<div className="py-4">
+									<h3 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal uppercase">Hospitales</h3>
+									<p className="text-[18px] md:text-[22px] poppins-regular">La tecnología a favor de tu salud y tranquilidad.</p>
+									<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
+										El entorno hospitalario demanda niveles superiores
+										de calidad, seguridad y eficiencia en cada una de
+										sus operaciones. Es esencial contar con aliados
+										profesionales que proporcionen soluciones adecuadas,
+										seguras y efectivas para fortalecer la atención médica
+										y asegurar espacios clínicos óptimos para pacientes y
+										personal.
+									</p>
 								</div>
+								<img src={Slider2} alt="La tecnología a favor de tu salud y tranquilidad." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
 							</animated.div>
+						)}
+						{activeDetail === 3 && (
+							<animated.div style={activeDetail === 3 ? detailAnimation : {}} className="w-full">
+								<div className="py-4">
+									<h3 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Hoteleria</h3>
+									<p className="text-[18px] md:text-[22px] poppins-regular">Mejora la experiencia de tus huespedes y la rapidez en el servicio.</p>
+									<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
+										La hotelería es uno de los sectores con mayor dinamismo
+										en su crecimiento. Contar con aliados profesionales que
+										brinden soluciones seguras, eficaces y bien adaptadas
+										resulta esencial para elevar la calidad del servicio
+										ofrecido al huésped.
+									</p>
+								</div>
+								<img src={Slider3} alt="Mejora la experiencia de tus huespedes y la rapidez en el servicio." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
+							</animated.div>
+						)}
+						{activeDetail === 4 && (
+							<animated.div style={activeDetail === 4 ? detailAnimation : {}} className="w-full">
+								<div className="py-4">
+									<h3 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Industria</h3>
+									<p className="text-[18px] md:text-[22px] poppins-regular">Impulsa tu productividad con soluciones inteligentes.</p>
+									<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
+										En un sector tan exigente como la industria, contar
+										con proveedores confiables no es una opción: es una
+										necesidad.<br></br> Brindamos herramientas y servicios diseñados
+										para optimizar procesos, garantizar seguridad operativa
+										y elevar la eficiencia en cada etapa.
+									</p>
+								</div>
+								<img src={Slider4} alt="Impulsa tu productividad con soluciones inteligentes." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
+							</animated.div>
+						)}
+						{activeDetail === 5 && (
+							<animated.div style={activeDetail === 5 ? detailAnimation : {}} className="w-full">
+								<div className="py-4">
+									<h3 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Educación</h3>
+									<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
+									<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
+										Los hogares hoy en día evolucionan con rapidez,
+										requerimos espacios más funcionales, cómodos y
+										seguros. Contar con proveedores especializados
+										que ofrezcan soluciones eficientes, confiables y
+										adecuadas es clave para mejorar la calidad de vida
+										y la experiencia en el entorno doméstico.
+									</p>
+								</div>
+								<img src={Slider4} alt="Explora lo que podemos hacer por tu vida diaria." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
+							</animated.div>
+						)}
 
-							{activeDetail === 1 && (
-								<animated.div style={activeDetail === 1 ? detailAnimation : {}} className="w-full">
-									<div className="py-4">
-										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal uppercase">Hogar</h4>
-										<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
-										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
-											Los hogares hoy en día evolucionan con rapidez,
-											requerimos espacios más funcionales, cómodos y
-											seguros. Contar con proveedores especializados
-											que ofrezcan soluciones eficientes, confiables y
-											adecuadas es clave para mejorar la calidad de vida
-											y la experiencia en el entorno doméstico.
-										</p>
-									</div>
-									<img src={Slider1} alt="Explora lo que podemos hacer por tu vida diaria." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
-								</animated.div>
-							)}
-							{activeDetail === 2 && (
-								<animated.div style={activeDetail === 2 ? detailAnimation : {}} className="w-full">
-									<div className="py-4">
-										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal uppercase">Hospitales</h4>
-										<p className="text-[18px] md:text-[22px] poppins-regular">La tecnología a favor de tu salud y tranquilidad.</p>
-										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
-											El entorno hospitalario demanda niveles superiores
-											de calidad, seguridad y eficiencia en cada una de
-											sus operaciones. Es esencial contar con aliados
-											profesionales que proporcionen soluciones adecuadas,
-											seguras y efectivas para fortalecer la atención médica
-											y asegurar espacios clínicos óptimos para pacientes y
-											personal.
-										</p>
-									</div>
-									<img src={Slider2} alt="La tecnología a favor de tu salud y tranquilidad." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
-								</animated.div>
-							)}
-							{activeDetail === 3 && (
-								<animated.div style={activeDetail === 3 ? detailAnimation : {}} className="w-full">
-									<div className="py-4">
-										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Hoteleria</h4>
-										<p className="text-[18px] md:text-[22px] poppins-regular">Mejora la experiencia de tus huespedes y la rapidez en el servicio.</p>
-										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
-											La hotelería es uno de los sectores con mayor dinamismo
-											en su crecimiento. Contar con aliados profesionales que
-											brinden soluciones seguras, eficaces y bien adaptadas
-											resulta esencial para elevar la calidad del servicio
-											ofrecido al huésped.
-										</p>
-									</div>
-									<img src={Slider3} alt="Mejora la experiencia de tus huespedes y la rapidez en el servicio." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
-								</animated.div>
-							)}
-							{activeDetail === 4 && (
-								<animated.div style={activeDetail === 4 ? detailAnimation : {}} className="w-full">
-									<div className="py-4">
-										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Industria</h4>
-										<p className="text-[18px] md:text-[22px] poppins-regular">Impulsa tu productividad con soluciones inteligentes.</p>
-										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
-											En un sector tan exigente como la industria, contar
-											con proveedores confiables no es una opción: es una
-											necesidad.<br></br> Brindamos herramientas y servicios diseñados
-											para optimizar procesos, garantizar seguridad operativa
-											y elevar la eficiencia en cada etapa.
-										</p>
-									</div>
-									<img src={Slider4} alt="Impulsa tu productividad con soluciones inteligentes." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
-								</animated.div>
-							)}
-							{activeDetail === 5 && (
-								<animated.div style={activeDetail === 5 ? detailAnimation : {}} className="w-full">
-									<div className="py-4">
-										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Educación</h4>
-										<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
-										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
-											Los hogares hoy en día evolucionan con rapidez,
-											requerimos espacios más funcionales, cómodos y
-											seguros. Contar con proveedores especializados
-											que ofrezcan soluciones eficientes, confiables y
-											adecuadas es clave para mejorar la calidad de vida
-											y la experiencia en el entorno doméstico.
-										</p>
-									</div>
-									<img src={Slider4} alt="" className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
-								</animated.div>
-							)}
+					</div>
+				</section>
 
-						</div>
-					</section>
+				<Form />
 
-					<Form />
-
-				</div>
-			}
+			</div>
 		</Layout>
 	)
 }

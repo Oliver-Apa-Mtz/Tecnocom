@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 import BannerSuccess from '../../assets/img/banner-success.webp';
 import BannerEffect from '../../assets/img/banner-effect.webp';
@@ -69,9 +70,14 @@ const Success = () => {
 
 	return (
 		<Layout>
-			{
-				<div>
-					<section className="w-full h-[300px] md:h-[400px] lg:h-[600px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerSuccess})` }}>
+			<SEO 
+				title="¿Cómo Trabajamos?"
+				description="Conoce nuestra metodología de trabajo: diagnóstico exhaustivo, propuesta integral, ejecución eficiente y optimización continua. Proceso estructurado para el éxito."
+				keywords="metodología trabajo, proceso TI, diagnóstico tecnológico, implementación, soporte 24/7, optimización continua"
+				url="/como-trabajamos"
+			/>
+			<div>
+					<section className="w-full h-[300px] md:h-[400px] lg:h-[600px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerSuccess})` }} role="banner">
 						<div className="w-full max-w-[1360px] mx-auto">
 							<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
 								<div className="text-center">
@@ -83,13 +89,13 @@ const Success = () => {
 						</div>
 					</section>
 
-					<section className="w-full h-auto md:h-[800px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerEffect})` }}>
+					<section className="w-full h-auto md:h-[800px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerEffect})` }} role="main">
 						<div className="w-full max-w-[1360px] mx-auto">
 							<div className='w-full max-w-[1170px] mx-auto flex lg:border-b border-white/15 flex-wrap md:flex-nowrap'>
 								<div className='w-full md:w-1/2 text-white text-center lg:border-r border-white/15 py-10'>
 									<animated.div style={!isMobile ? animationPropsBanner2 : {}} className="animated-element">
 										<img src={Circle1} alt="Diagnóstico Exhaustivo" className='w-[74px] mx-auto mb-4' />
-										<p className='text-[20px] mb-4 poppins-semibold px-4 lg:px-0'>Diagnóstico Exhaustivo</p>
+										<h2 className='text-[20px] mb-4 poppins-semibold px-4 lg:px-0'>Diagnóstico Exhaustivo</h2>
 										<p className='text-[14px] mb-4 poppins-regular w-full sm:w-[340px] mx-auto px-4 lg:px-0'>
 											1. Evaluamos tu infraestructura y
 											objetivos, empleando herramientas
@@ -100,7 +106,7 @@ const Success = () => {
 								<div className='w-full md:w-1/2 text-white text-center py-10'>
 									<animated.div style={!isMobile ? animationPropsBanner3 : {}} className="animated-element">
 										<img src={Circle2} alt="Propuesta Integral" className='w-[74px] mx-auto mb-4' />
-										<p className='text-[20px] mb-4 poppins-semibold px-4 lg:px-0'>Propuesta Integral</p>
+										<h2 className='text-[20px] mb-4 poppins-semibold px-4 lg:px-0'>Propuesta Integral</h2>
 										<p className='text-[14px] mb-4 poppins-regular w-full sm:w-[340px] mx-auto px-4 lg:px-0'>
 											2. Presentamos Propuesta técnica y
 											propuesta económica detallada para
@@ -113,7 +119,7 @@ const Success = () => {
 								<div className='w-full md:w-1/2 text-white text-center lg:border-r border-white/15 py-10'>
 									<animated.div style={!isMobile ? animationPropsBanner4 : {}} className="animated-element">
 										<img src={Circle3} alt="Ejecución Eficiente" className='w-[74px] mx-auto mb-4' />
-										<p className='text-[20px] mb-4 poppins-semibold px-4 lg:px-0'>Ejecución Eficiente</p>
+										<h2 className='text-[20px] mb-4 poppins-semibold px-4 lg:px-0'>Ejecución Eficiente</h2>
 										<p className='text-[14px] mb-4 poppins-regular w-full sm:w-[340px] mx-auto px-4 lg:px-0'>
 											3. Nuestro equipo certificado implementa
 											la solución con mínima interrupción a
@@ -124,7 +130,7 @@ const Success = () => {
 								<div className='w-full md:w-1/2 text-white text-center py-10'>
 									<animated.div style={!isMobile ? animationPropsBanner5 : {}} className="animated-element">
 										<img src={Circle4} alt="Optimización Continua" className='w-[74px] mx-auto mb-4' />
-										<p className='text-[20px] mb-4 poppins-semibold px-4 lg:px-0'>Optimización Continua</p>
+										<h2 className='text-[20px] mb-4 poppins-semibold px-4 lg:px-0'>Optimización Continua</h2>
 										<p className='text-[14px] mb-4 poppins-regular w-full sm:w-[340px] mx-auto px-4 lg:px-0'>
 											4. Soporte 24/7, monitoreo proactivo y
 											mejora continua mediante reportes periódicos
@@ -135,8 +141,7 @@ const Success = () => {
 						</div>
 					</section>
 
-				</div>
-			}
+			</div>
 		</Layout>
 	)
 }

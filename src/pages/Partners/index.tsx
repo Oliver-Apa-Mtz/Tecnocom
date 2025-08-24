@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 import Form from '../../components/Form';
 
 import BannerPartners from '../../assets/img/banner-partners.webp';
@@ -52,9 +53,14 @@ const Partners = () => {
 
 	return (
 		<Layout>
-			{
-				<div>
-					<section className="w-full h-[600px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerPartners})` }}>
+			<SEO 
+				title="Socios"
+				description="Conoce nuestros socios estratégicos: Cisco, Dell, Oracle, Huawei, Hikvision, Motorola y más. Colaboramos con las principales marcas tecnológicas globales."
+				keywords="socios tecnológicos, Cisco, Dell, Oracle, Huawei, Hikvision, Motorola, alianzas estratégicas, marcas tecnológicas"
+				url="/socios"
+			/>
+			<div>
+					<section className="w-full h-[600px] p-8 md:p-20 bg-cover bg-center flex items-center" style={{ backgroundImage: `url(${BannerPartners})` }} role="banner">
 						<div className="w-full max-w-[1360px] mx-auto">
 							<animated.div style={!isMobile ? animationPropsBanner1 : {}} className="animated-element">
 								<div className="text-center">
@@ -70,7 +76,7 @@ const Partners = () => {
 						</div>
 					</section>
 
-					<section className='w-full'>
+					<section className='w-full' role="main">
 						<animated.div style={!isMobile ? animationPropsBanner2 : {}} className="animated-element w-full">
 							<div className="w-full max-w-[1360px] mx-auto flex justify-center flex-wrap pt-20 pb-10">
 								<img src={Socio1} alt="Icono AXIS" className='w-[150px] md:w-[200px] mb-4' />
@@ -96,8 +102,7 @@ const Partners = () => {
 					</section>
 
 					<Form />
-				</div>
-			}
+			</div>
 		</Layout>
 	)
 }
