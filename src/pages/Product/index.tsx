@@ -81,7 +81,7 @@ const Product = () => {
 											setActiveDetail(1);
 										}, 100);
 									}}>
-										<img src={DetailSmall1} alt="" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+										<img src={DetailSmall1} alt="Hogar" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
 										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hogar</p>
 										{activeDetail === 1 && <div className="detail-active"></div>}
 									</div>
@@ -91,7 +91,7 @@ const Product = () => {
 											setActiveDetail(2);
 										}, 100);
 									}}>
-										<img src={DetailSmall2} alt="" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+										<img src={DetailSmall2} alt="Hospital" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
 										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hospital</p>
 										{activeDetail === 2 && <div className="detail-active"></div>}
 									</div>
@@ -101,7 +101,7 @@ const Product = () => {
 											setActiveDetail(3);
 										}, 100);
 									}}>
-										<img src={DetailSmall3} alt="" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+										<img src={DetailSmall3} alt="Hoteleria" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
 										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Hoteleria</p>
 										{activeDetail === 3 && <div className="detail-active"></div>}
 									</div>
@@ -111,7 +111,7 @@ const Product = () => {
 											setActiveDetail(4);
 										}, 100);
 									}}>
-										<img src={DetailSmall4} alt="" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+										<img src={DetailSmall4} alt="Industrial" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
 										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Industrial</p>
 										{activeDetail === 4 && <div className="detail-active"></div>}
 									</div>
@@ -121,7 +121,7 @@ const Product = () => {
 											setActiveDetail(5);
 										}, 100);
 									}}>
-										<img src={DetailSmall5} alt="" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
+										<img src={DetailSmall5} alt="Educación" className="w-full h-[50px] sm:h-[70px] md:h-[110px] lg:h-[220px] object-cover" />
 										<p className='text-text text-[12px] sm:text-[14px] lg:text-[20px] albert-sans-300 py-2'>Educación</p>
 										{activeDetail === 5 && <div className="detail-active"></div>}
 									</div>
@@ -131,7 +131,7 @@ const Product = () => {
 							{activeDetail === 1 && (
 								<animated.div style={activeDetail === 1 ? detailAnimation : {}} className="w-full">
 									<div className="py-4">
-										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Hogar</h4>
+										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal uppercase">Hogar</h4>
 										<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
 										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
 											Los hogares hoy en día evolucionan con rapidez,
@@ -142,58 +142,57 @@ const Product = () => {
 											y la experiencia en el entorno doméstico.
 										</p>
 									</div>
-									<img src={Slider1} alt="" className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
+									<img src={Slider1} alt="Explora lo que podemos hacer por tu vida diaria." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
 								</animated.div>
 							)}
 							{activeDetail === 2 && (
 								<animated.div style={activeDetail === 2 ? detailAnimation : {}} className="w-full">
 									<div className="py-4">
-										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Hospital</h4>
-										<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
+										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal uppercase">Hospitales</h4>
+										<p className="text-[18px] md:text-[22px] poppins-regular">La tecnología a favor de tu salud y tranquilidad.</p>
 										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
-											Los hogares hoy en día evolucionan con rapidez,
-											requerimos espacios más funcionales, cómodos y
-											seguros. Contar con proveedores especializados
-											que ofrezcan soluciones eficientes, confiables y
-											adecuadas es clave para mejorar la calidad de vida
-											y la experiencia en el entorno doméstico.
+											El entorno hospitalario demanda niveles superiores
+											de calidad, seguridad y eficiencia en cada una de
+											sus operaciones. Es esencial contar con aliados
+											profesionales que proporcionen soluciones adecuadas,
+											seguras y efectivas para fortalecer la atención médica
+											y asegurar espacios clínicos óptimos para pacientes y
+											personal.
 										</p>
 									</div>
-									<img src={Slider2} alt="" className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
+									<img src={Slider2} alt="La tecnología a favor de tu salud y tranquilidad." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
 								</animated.div>
 							)}
 							{activeDetail === 3 && (
 								<animated.div style={activeDetail === 3 ? detailAnimation : {}} className="w-full">
 									<div className="py-4">
 										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Hoteleria</h4>
-										<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
+										<p className="text-[18px] md:text-[22px] poppins-regular">Mejora la experiencia de tus huespedes y la rapidez en el servicio.</p>
 										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
-											Los hogares hoy en día evolucionan con rapidez,
-											requerimos espacios más funcionales, cómodos y
-											seguros. Contar con proveedores especializados
-											que ofrezcan soluciones eficientes, confiables y
-											adecuadas es clave para mejorar la calidad de vida
-											y la experiencia en el entorno doméstico.
+											La hotelería es uno de los sectores con mayor dinamismo
+											en su crecimiento. Contar con aliados profesionales que
+											brinden soluciones seguras, eficaces y bien adaptadas
+											resulta esencial para elevar la calidad del servicio
+											ofrecido al huésped.
 										</p>
 									</div>
-									<img src={Slider3} alt="" className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
+									<img src={Slider3} alt="Mejora la experiencia de tus huespedes y la rapidez en el servicio." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
 								</animated.div>
 							)}
 							{activeDetail === 4 && (
 								<animated.div style={activeDetail === 4 ? detailAnimation : {}} className="w-full">
 									<div className="py-4">
-										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Industrial</h4>
-										<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
+										<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal text-uppercase">Industria</h4>
+										<p className="text-[18px] md:text-[22px] poppins-regular">Impulsa tu productividad con soluciones inteligentes.</p>
 										<p className='text-text text-[16px] md:text-[18px] albert-sans-300 py-2'>
-											Los hogares hoy en día evolucionan con rapidez,
-											requerimos espacios más funcionales, cómodos y
-											seguros. Contar con proveedores especializados
-											que ofrezcan soluciones eficientes, confiables y
-											adecuadas es clave para mejorar la calidad de vida
-											y la experiencia en el entorno doméstico.
+											En un sector tan exigente como la industria, contar
+											con proveedores confiables no es una opción: es una
+											necesidad.<br></br> Brindamos herramientas y servicios diseñados
+											para optimizar procesos, garantizar seguridad operativa
+											y elevar la eficiencia en cada etapa.
 										</p>
 									</div>
-									<img src={Slider4} alt="" className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
+									<img src={Slider4} alt="Impulsa tu productividad con soluciones inteligentes." className='h-auto sm:h-[400px] md:h-[500px] lg:h-[880px]' style={{ width: '100%' }} />
 								</animated.div>
 							)}
 							{activeDetail === 5 && (

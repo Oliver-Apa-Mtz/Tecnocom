@@ -174,9 +174,9 @@ const About = () => {
 											en cada proyecto.
 										</p>
 										<div className='flex items-center justify-center gap-4 md:gap-12 mt-14'>
-											<img src={Logo1} className='w-[42px] md:w-[72px]' alt="Cisco" />
-											<img src={Logo2} className='w-[30px] md:w-[50px]' alt="Huawei" />
-											<img src={Logo3} className='w-[56px] md:w-[86px]' alt="Juniper" />
+											<img src={Logo1} className='w-[42px] md:w-[72px]' alt="Icono Cisco" />
+											<img src={Logo2} className='w-[30px] md:w-[50px]' alt="Icono Huawei" />
+											<img src={Logo3} className='w-[56px] md:w-[86px]' alt="Icono Juniper" />
 										</div>
 									</div>
 								</animated.div>
@@ -199,7 +199,7 @@ const About = () => {
 							</div>
 							<div className="flex-1">
 								<animated.div style={!isMobile ? animationPropsBanner5 : {}} className="animated-element">
-									<img src={imgAbout2} alt="Engineer" className='max-w-[280px] sm:max-w-[400px] md:max-w-full' />
+									<img src={imgAbout2} alt="Desde 2014, Tecnocom MZT ha sentado las bases de su presencia en Sinaloa" className='max-w-[280px] sm:max-w-[400px] md:max-w-full' />
 								</animated.div>
 							</div>
 						</div>

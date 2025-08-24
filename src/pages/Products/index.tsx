@@ -106,122 +106,168 @@ const Products = () => {
 							<animated.div style={!isMobile ? animationPropsBanner2 : {}} className="animated-element">
 								<div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mt-14 px-[20px] lg:px-0">
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card1} alt="Conectividad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card1} alt="Telecomunicaciones y Redes" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
 												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
 												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Instalación de redes LAN, enlaces de fibra óptica y
+													Wi-Fi empresarial; creación de centros de datos y
+													soluciones en la nube con respaldo automático.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
 											<img src={Card2} alt="Telefonía SIP" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
 												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<p className="text-[16px] text-text albert-sans-700">Telefonía SIP</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Centralitas IP y VoIP que reducen costos, permiten
+													movilidad y comunicaciones unificadas (voz, chat y video).
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card3} alt="Seguridad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card3} alt="Videovigilancia y Control de Acceso" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Seguridad</h3>
+												<p className="text-[16px] text-text albert-sans-700">Videovigilancia y Control de Acceso</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Cámaras IP (Axis, Hikvision), monitoreo remoto y
+													acceso por huella o tarjeta. Alertas inteligentes
+													y grabación continua.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card4} alt="Seguridad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card4} alt="Sistemas Antidrone" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Seguridad</h3>
+												<p className="text-[16px] text-text albert-sans-700">Sistemas Antidrone</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Tecnología de detección y neutralización de
+													drones no autorizados, ideal para instalaciones
+													críticas.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card5} alt="Seguridad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card5} alt="Infraestructura Industrial" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Infraestructura</h3>
+												<p className="text-[16px] text-text albert-sans-700">Infraestructura Industrial</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Sistemas contra incendios, HVAC industrial,
+													tableros eléctricos, UPS y generadores que
+													mantienen tu operación sin interrupciones.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card6} alt="Seguridad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card6} alt="Distribución de TV Abierta" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Infraestructura</h3>
+												<p className="text-[16px] text-text albert-sans-700">Distribución de TV Abierta</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Antenas y amplificadores para señal de
+													televisión en edificios, hoteles o campus,
+													asegurando cobertura nítida en todos los puntos.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card7} alt="Seguridad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card7} alt="Casa de Software e Innovación" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Innovación</h3>
+												<p className="text-[16px] text-text albert-sans-700">Casa de Software e Innovación</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Desarrollo a medida: aplicaciones web con
+													React, backend en Node.js, automatización
+													en Python y .NET. Integramos IA, machine
+													learning y analítica de datos.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card8} alt="Seguridad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card8} alt="Drones Especializados" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Innovación</h3>
+												<p className="text-[16px] text-text albert-sans-700">Drones Especializados</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Soluciones DJI y Autel para inspección,
+													mapeo y monitoreo agrícola o industrial.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card9} alt="Seguridad" className="w-full h-[200px] md:h-[300px]] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card9} alt="Radiocomunicación" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Comunicación</h3>
+												<p className="text-[16px] text-text albert-sans-700">Radiocomunicación</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Radios portátiles y base (Motorola, Kenwood),
+													repetidores y estaciones para cobertura total
+													en zonas remotas.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card10} alt="Seguridad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card10} alt="Sonorización de Aulas" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Comunicación</h3>
+												<p className="text-[16px] text-text albert-sans-700">Sonorización de Aulas</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Sistemas de audio para aulas y auditorios con
+													micrófonos inalámbricos y bocinas de alta fidelidad.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card11} alt="Seguridad" className="w-full h-[200px] md:h-[300px]] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card11} alt="Redes" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Sistemas Hospitalarios</h3>
+												<p className="text-[16px] text-text albert-sans-700">Redes</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Mejoramos la atención en clínicas y hospitales
+													con redes que conectan equipos médicos
+													(rayos X, ultrasonido) de forma segura.
+												</p>
 											</div>
 										</div>
 									</Link>
 									<Link to="/industrias">
-										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer">
-											<img src={Card12} alt="Seguridad" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
+										<div className="bg-white rounded-lg overflow-hidden shadow hover:shadow-lg transition cursor-pointer min-h-auto md:min-h-[500px] lg:min-h-[600px]">
+											<img src={Card12} alt="Telemedicina" className="w-full h-[200px] md:h-[300px] lg:h-[400px] object-cover" />
 											<div className="p-5">
-												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Conectividad</h3>
-												<p className="text-[16px] text-text albert-sans-700">Telecomunicaciones y Redes</p>
-												<p className="text-[16px] text-text albert-sans-300">Instalación de redes LAN, enlaces de fibra óptica y Wi-Fi empresarial; creación de centros de datos y soluciones en la nube con respaldo automático.</p>
+												<h3 className="text-[20px] poppins-semibold text-principal mb-2">Sistemas Hospitalarios</h3>
+												<p className="text-[16px] text-text albert-sans-700">Telemedicina</p>
+												<p className="text-[16px] text-text albert-sans-300">
+													Implementamos plataformas de telemedicina
+													para atender pacientes a distancia, ahorrando
+													tiempo y costos.
+												</p>
 											</div>
 										</div>
 									</Link>

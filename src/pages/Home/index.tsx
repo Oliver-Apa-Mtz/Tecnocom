@@ -162,7 +162,7 @@ const Home = () => {
 						<div className="max-w-[1360px] mx-auto px-[20px] py-10 flex flex-col md:flex-row items-center gap-12">
 							<div className="flex-1 text-center md:text-left">
 								<animated.div style={!isMobile ? animationPropsBanner3 : {}} className="animated-element">
-									<img className='h-[55px] mb-6 mx-auto md:mx-0' src={Logo} alt="" loading="lazy" />
+									<img className='h-[55px] mb-6 mx-auto md:mx-0' src={Logo} alt="Logo Tecnocom MZT" loading="lazy" />
 									<h2 className="text-2xl md:text-3xl poppins-semibold text-principal mb-4">Garantizamos estabilidad y escalabilidad en cada proyecto.</h2>
 									<p className="text-text text-[18px] albert-sans-300">
 										Nuestra experiencia abarca desde el diseño
@@ -177,7 +177,7 @@ const Home = () => {
 							</div>
 							<div className="flex-1">
 								<animated.div style={!isMobile ? animationPropsBanner4 : {}} className="animated-element">
-									<img src={Image1} alt="Engineer" className='max-w-[280px] sm:max-w-[400px] md:max-w-full' />
+									<img src={Image1} alt="Garantizamos estabilidad y escalabilidad en cada proyecto." className='max-w-[280px] sm:max-w-[400px] md:max-w-full' />
 								</animated.div>
 							</div>
 						</div>
@@ -199,28 +199,28 @@ const Home = () => {
 											<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal">Hogar</h4>
 											<p className="text-[18px] md:text-[22px] poppins-regular">Explora lo que podemos hacer por tu vida diaria.</p>
 										</div>
-										<img src={Slider1} alt="" className='sm:h-[300px] md:h-[500px] lg:h-[800px]' style={{ width: '100%' }} />
+										<img src={Slider1} alt="Explora lo que podemos hacer por tu vida diaria." className='sm:h-[300px] md:h-[500px] lg:h-[800px]' style={{ width: '100%' }} />
 									</div>
 									<div className="w-full" style={{ outline: 'none' }}>
 										<div className="px-8 py-4 min-h-[116px] lg:min-h-max">
 											<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal">Hospitales</h4>
 											<p className="text-[18px] md:text-[22px] poppins-regular">La tecnología a favor de tu salud y tranquilidad.</p>
 										</div>
-										<img src={Slider2} alt="" className='sm:h-[300px] md:h-[500px] lg:h-[800px]' style={{ width: '100%' }} />
+										<img src={Slider2} alt="La tecnología a favor de tu salud y tranquilidad." className='sm:h-[300px] md:h-[500px] lg:h-[800px]' style={{ width: '100%' }} />
 									</div>
 									<div className="w-full" style={{ outline: 'none' }}>
 										<div className="px-8 py-4 min-h-[116px] lg:min-h-max">
 											<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal">Hotelería</h4>
 											<p className="text-[18px] md:text-[22px] poppins-regular">Mejora la experiencia de tus huespedes y la rapidez en el servicio.</p>
 										</div>
-										<img src={Slider3} alt="" className='sm:h-[300px] md:h-[500px] lg:h-[800px]' style={{ width: '100%' }} />
+										<img src={Slider3} alt="Mejora la experiencia de tus huespedes y la rapidez en el servicio." className='sm:h-[300px] md:h-[500px] lg:h-[800px]' style={{ width: '100%' }} />
 									</div>
 									<div className="w-full" style={{ outline: 'none' }}>
 										<div className="px-8 py-4 min-h-[116px] lg:min-h-max">
 											<h4 className="text-[20px] md:text-[24px] lg:text-[34px] poppins-semibold text-principal">Industria</h4>
 											<p className="text-[18px] md:text-[22px] poppins-regular">Eficienta la producción manteniendo la seguridad y comunicación al máximo.</p>
 										</div>
-										<img src={Slider4} alt="" className='sm:h-[300px] md:h-[500px] lg:h-[800px]' style={{ width: '100%' }} />
+										<img src={Slider4} alt="Eficienta la producción manteniendo la seguridad y comunicación al máximo." className='sm:h-[300px] md:h-[500px] lg:h-[800px]' style={{ width: '100%' }} />
 									</div>
 								</Slider>
 							</animated.div>

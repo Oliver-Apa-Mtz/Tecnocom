@@ -73,24 +73,24 @@ const Partners = () => {
 					<section className='w-full'>
 						<animated.div style={!isMobile ? animationPropsBanner2 : {}} className="animated-element w-full">
 							<div className="w-full max-w-[1360px] mx-auto flex justify-center flex-wrap pt-20 pb-10">
-								<img src={Socio1} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio2} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio3} alt="" className='w-[150px] md:w-[200px] mb-4 ' />
-								<img src={Socio4} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio5} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio6} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio7} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio8} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio9} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio10} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio11} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio12} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio13} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio14} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio15} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio16} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio17} alt="" className='w-[150px] md:w-[200px] mb-4' />
-								<img src={Socio18} alt="" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio1} alt="Icono AXIS" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio2} alt="Icono CISCO" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio3} alt="Icono DELL" className='w-[150px] md:w-[200px] mb-4 ' />
+								<img src={Socio4} alt="Icono ORACLE" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio5} alt="Icono HUAWEI" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio6} alt="Icono HIKVISION" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio7} alt="Icono AJHUA" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio8} alt="Icono MOTOROLA" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio9} alt="Icono JUNIPER" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio10} alt="Icono VMWARE" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio11} alt="Icono PAESSLER" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio12} alt="Icono DJI" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio13} alt="Icono AUTEL" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio14} alt="Icono KENWOOD" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio15} alt="Icono INGRAM" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio16} alt="Icono ANIXTER" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio17} alt="Icono SYSCOM" className='w-[150px] md:w-[200px] mb-4' />
+								<img src={Socio18} alt="Icono CVA" className='w-[150px] md:w-[200px] mb-4' />
 							</div>
 						</animated.div>
 					</section>

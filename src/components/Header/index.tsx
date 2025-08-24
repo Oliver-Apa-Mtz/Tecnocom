@@ -44,7 +44,7 @@ const Header = () => {
 			<div className="max-w-[1360px] mx-auto px-[20px] flex items-center justify-between h-full">
 				<div>
 					<Link to="/">
-						<img className='h-[40px] sm:h-[55px]' src={Logo} alt="" loading="lazy" />
+						<img className='h-[40px] sm:h-[55px]' src={Logo} alt="Logo Tecnocom MZT" loading="lazy" />
 					</Link>
 				</div>
 				<nav className="hidden lg:flex gap-4 xl:gap-6 text-sm text-text">
@@ -57,7 +57,7 @@ const Header = () => {
 					<Link to="/contacto" className={`header__nav__item poppins-regular hover:text-principal ${location.pathname === '/contacto' ? 'active' : ''}`}>Contáctanos</Link>
 				</nav>
 				<button className="lg:hidden">
-					<img className='h-[30px] cursor-pointer' src={Menu} alt="" loading="lazy" onClick={() => setMenuMovil(!menuMovil)} />
+					<img className='h-[30px] cursor-pointer' src={Menu} alt="Icono menu" loading="lazy" onClick={() => setMenuMovil(!menuMovil)} />
 				</button>
 				{menuMovil && (
 					<div className='header__nav__movil bg-white' onClick={() => setMenuMovil(false)}>

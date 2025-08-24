@@ -20,14 +20,14 @@ const Footer = () => {
 			<div className="w-full max-w-[1360px] mx-auto px-[20px] py-8 lg:py-14 lg:flex justify-between">
 				<div className='w-full lg:w-auto'>
 					<Link to="/">
-						<img className='h-[55px] mx-auto lg:mx-0 mb-8 lg:mb-0' src={Logo} alt="" loading="lazy" />
+						<img className='h-[55px] mx-auto lg:mx-0 mb-8 lg:mb-0' src={Logo} alt="Logo Tecnocom MZT" loading="lazy" />
 					</Link>
 				</div>
 				<div className='w-[280px] md:w-[300px] mx-auto lg:mx-0 ml-auto lg:ml-[40px]'>
 					<h4 className="mb-2 text-principal text-[20px] text-center lg:text-left poppins-semibold">Contacto</h4>
 					<Link to="https://maps.app.goo.gl/h5kXSZp9TJ9Je4fE9" target="_blank">
 						<p className='albert-sans-300 text-purple text-[18px] mb-2 relative pl-8 hover:text-principal'>
-							<img src={IconPin} alt="" className='absolute top-1 left-0' />
+							<img src={IconPin} alt="Icono ubicación" className='absolute top-1 left-0' />
 							Mazatlán, Sinaloa.<br />
 							Lunes a Viernes<br />
 							9:00 – 18:00 hrs
@@ -35,13 +35,13 @@ const Footer = () => {
 					</Link>
 					<a href="tel:+526671234567">
 						<p className='albert-sans-300 text-purple text-[18px] mb-2 relative pl-8 hover:text-principal'>
-							<img src={IconPhone} alt="" className='absolute top-1 left-0' />
+							<img src={IconPhone} alt="Icono teléfono" className='absolute top-1 left-0' />
 							+52 (667) 123-4567
 						</p>
 					</a>
 					<a href="mailto:contacto@tecnocommzt.com">
 						<p className='albert-sans-300 text-purple text-[18px] mb-2 relative pl-8 hover:text-principal'>
-							<img src={IconMail} alt="" className='absolute top-1 left-0' />
+							<img src={IconMail} alt="Icono correo" className='absolute top-1 left-0' />
 							contacto@tecnocommzt.com
 						</p>
 					</a>
@@ -59,23 +59,23 @@ const Footer = () => {
 				</div>
 				<div className='flex justify-center lg:justify-end gap-5 ml-0 lg:ml-[40px] pt-4 lg:pt-0'>
 					<Link to="/" className="hover:grayscale transition-all duration-300">
-						<img src={Icon1} alt="" />
+						<img src={Icon1} alt="Icono Linkedin" />
 					</Link>
 					<Link to="/" className="hover:grayscale transition-all duration-300">
-						<img src={Icon2} alt="" />
+						<img src={Icon2} alt="Icono Facebook" />
 					</Link>
 					<Link to="/" className="hover:grayscale transition-all duration-300">
-						<img src={Icon3} alt="" />
+						<img src={Icon3} alt="Icono X" />
 					</Link>
 					<Link to="/" className="hover:grayscale transition-all duration-300">
-						<img src={Icon4} alt="" />
+						<img src={Icon4} alt="Icono Instagram" />
 					</Link>
 				</div>
 			</div>
 			<div className='max-w-[1360px] mx-auto px-[20px] pb-10 text-center relative'>
 				<p className='text-[16px]'><span className='text-purple albert-sans-300'>© 2025</span> <span className='text-principal poppins-semibold'>Tecnocom MZT</span></p>
 				<div onClick={scrollToTop} className='absolute right-2 top-0 w-[48px] h-[48px] rounded-full bg-principal flex justify-center items-center cursor-pointer hover:bg-secundario transition-all duration-300'>
-					<img src={IconArrow} alt="" />
+					<img src={IconArrow} alt="Icono flecha" />
 				</div>
 			</div>
 		</footer>
